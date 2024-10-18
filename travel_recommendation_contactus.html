@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+2:wght@400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <script src="./travel_recommendation_contactus.js" defer></script>
+    <title>Travel Recommendation</title>
+</head>
+
+<body>
+    <nav id="home-nav">
+        <img src="./images/airplane-svgrepo-com.svg" id="logo">
+        <p id="travel-agent">Dream Travel Center</p>
+        <ul id="menu-ul">
+            <li><a href="travel_recommendation.html" id="li-home">&nbsp;Home&nbsp;</a></li>
+            <li><a href="travel_recommendation_aboutus.html" id="li-aboutus">&nbsp;About Us&nbsp;</a></li>
+            <li><a href="travel_recommendation_contactus.html" id="li-contactus" class="active">&nbsp;Contact
+                    Us&nbsp;</a></li>
+        </ul>
+    </nav>
+    <main id="contactus-main">
+        <div>
+            <p id="contactus-title">Contact Us</p>
+            <p id="contactus-helptext">Let us help your dream travel come truth!</p>
+        </div>
+        <div id="contactus-entry-form">
+            <div class="required">
+                <label for="name" id="contact-name">Full Name</label>
+                <input type="text" id="contactus-name" name="name" required>
+            </div>
+            <div class="required">
+                <label for="email" id="contact-email">Email</label>
+                <input type="email" id="contactus-email" name="email" required>
+            </div>
+            <div>
+                <label for="telephone" id="contact-telephone">Telephone</label>
+                <input type="telephone" id="contactus-telephone" name="telephone">
+            </div>
+            <div>
+                <label for="numberofpeople" id="contact-numberofpeople">No. of People to Trevel</label>
+                <input type="numberofpeople" id="contactus-numberofpeople" name="numberofpeople">
+            </div>
+            <div>
+                <label for="whentotrevel" id="contact-whentotrevel">When to Trevel</label>
+                <input type="text" id="contactus-whentotrevel" name="whentotrevel">
+            </div>
+            <div>
+                <label for="trevelduration" id="contact-trevelduration">Trevel Duration</label>
+                <input type="text" id="contactus-trevelduration" name="trevelduration">
+            </div>
+            <div>
+                <label for="favouriteplaces" id="contact-favouriteplaces">Favourite Places</label>
+                <input type="text" id="contactus-favouriteplaces" name="favouriteplaces">
+            </div>
+            <div>
+                <label for="moredetails" id="contact-moredetails">More Details</label>
+                <textarea id="contactus-moredetails" name="moredetails" rows="4"></textarea>
+            </div>
+            <button type="submit" onclick="contactusthankyou()" id="contact-submit">Submit</button>
+        </div>
+    </main>
+    <div id="sidebar-icons">
+        <img src="./images/icon1.png" class="icon1">
+        <img src="./images/icon2.png" class="icon2">
+        <img src="./images/icon3.png" class="icon3">
+        <img src="./images/icon4.png" class="icon4">
+    </div>
+    <div id="alientface-path">
+        <img src="./images/alientface.png" class="alientface">
+    </div>
+    <div id="astronaut-path">
+        <img src="./images/astronaut.png" class="alientface">
+    </div>
+    <div id="moon-path">
+        <img src="./images/bluemoon.png" class="moon">
+    </div>
+    <div id="mars-path">
+        <img src="./images/mars.png" class="mars">
+    </div>
+    <div id="saturn-path">
+        <img src="./images/saturn.png" class="saturn">
+    </div>
+</body>
+
+</html>
