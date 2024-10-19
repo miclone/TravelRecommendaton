@@ -160,8 +160,6 @@ textarea {
     animation: astronaut 10s linear infinite alternate-reverse;
 }
 
-.astronaut {}
-
 @keyframes astronaut {
 
     0% {
@@ -183,5 +181,22 @@ textarea {
     75%,
     100% {
         transform: translateX(calc(50vw - 355px));
+    }
+}
+
+#rocket-path {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 100%;
+    animation: rocket 5s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateX(-140vw) translateY(120vh);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(-120vh);
     }
 }
