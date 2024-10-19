@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/worldcity.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#airplane1-path {
+    position: absolute;
+    margin-top: 90vh;
+    margin-left: 100%;
+    animation: airplane1 15s linear infinite;
+}
+
+@keyframes airplane1 {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-120vw);
+    }
+}
+
+#airplane2-path {
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 150%;
+    animation: airplane2 20s linear infinite;
+}
+
+@keyframes airplane2 {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-200vw);
+    }
+}
+
+#flyingsaucer-path {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 100%;
+    animation: flyingsaucer 5s linear infinite;
+}
+
+@keyframes flyingsaucer {
+    0% {
+        transform: translateX(-120vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}

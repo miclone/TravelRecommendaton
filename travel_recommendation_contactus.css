@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/worldcity.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#contactus-main {
+    display: block;
+    color: black;
+    width: 550px;
+    height: 450px;
+    margin-top: -30px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 09);
+    background: linear-gradient(-45deg, rgb(187, 92, 92), rgb(117, 117, 202), rgb(235, 229, 229));
+    z-index: 1;
+}
+
+#contactus-title {
+    color: white;
+    font-size: 30px;
+    font-family: "Arvo";
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#contactus-helptext {
+    color: rgb(236, 234, 234);
+    font-size: 1.2rem;
+    transform: translateX(200px) translateY(-28px);
+}
+
+#contactus-entry-form {
+    display: block;
+    color: black;
+    margin-top: -20px;
+}
+
+#contactus-entry-form>* {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#contactus-entry-form div label {
+    display: inline-block;
+    width: 180px;
+    font-size: 1rem;
+}
+
+#contactus-entry-form div>input,
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+#contact-name {
+    padding-left: 100px;
+}
+
+#contactus-name {
+    text-size-adjust: 80%;
+}
+
+#contact-email {
+    padding-left: 130px;
+}
+
+#contact-telephone {
+    padding-left: 100px;
+}
+
+#contact-numberofpeople {
+    padding-left: 18px;
+}
+
+#contact-whentotrevel {
+    padding-left: 68px;
+}
+
+#contact-trevelduration {
+    padding-left: 64px;
+}
+
+#contact-favouriteplaces {
+    padding-left: 56px;
+}
+
+#contact-moredetails {
+    padding-left: 80px;
+    transform: translateY(-73px);
+}
+
+#contact-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10%;
+    padding: 3px 7px;
+    transform: translateX(426px) translateY(-5px);
+}
+
+#alientface-path {
+    position: absolute;
+    margin-top: 30vh;
+    animation: alientface 10s linear infinite alternate-reverse;
+}
+
+.alientface {
+    margin-left: 275px;
+}
+
+@keyframes alientface {
+
+    0% {
+        transform: translateX(calc(50vw - 275px));
+    }
+
+    15% {
+        transform: translateX(calc(50vw - 200px));
+    }
+
+    33% {
+        transform: translateX(calc(50vw - 150px));
+    }
+
+    66% {
+        transform: translateX(calc(50vw - 60px));
+    }
+
+    75%,
+    100% {
+        transform: translateX(50vw);
+    }
+}
+
+#astronaut-path {
+    position: absolute;
+    margin-top: 40vh;
+    animation: astronaut 10s linear infinite alternate-reverse;
+}
+
+.astronaut {}
+
+@keyframes astronaut {
+
+    0% {
+        transform: translateX(calc(50vw - 80px));
+    }
+
+    15% {
+        transform: translateX(calc(50vw - 160px));
+    }
+
+    30% {
+        transform: translateX(calc(50vw - 220px));
+    }
+
+    60% {
+        transform: translateX(calc(50vw - 300px));
+    }
+
+    75%,
+    100% {
+        transform: translateX(calc(50vw - 355px));
+    }
+}

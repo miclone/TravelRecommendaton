@@ -1,0 +1,74 @@
+#bk-img {
+    height: 50vh;
+    width: 100%;
+    margin-top: 50vh;
+    opacity: 80%;
+    z-index: -1;
+}
+
+#nav {
+    position: absolute;
+    display: flex;
+    background-color: rgb(58, 57, 57);
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+#logo {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+#travel-agent {
+    color: rgb(178, 207, 231);
+    margin-left: 16px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#menu-ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 30px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#menu-ul li {
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+#menu-ul li a {
+    color: rgb(90, 164, 250);
+    background-color: rgb(58, 57, 57);
+    text-decoration: none;
+}
+
+#menu-ul li a.active {
+    color: rgb(224, 31, 31);
+    background-color: rgb(188, 213, 243);
+}
+
+#menu-ul li a:hover {
+    color: rgb(224, 31, 31);
+}
+
+#sidebar-icons {
+    position: absolute;
+    width: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 60vh;
+}
+
+#sidebar-icons>img {
+    width: 100%;
+    margin-left: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+}

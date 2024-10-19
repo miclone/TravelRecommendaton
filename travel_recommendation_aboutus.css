@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/worldcity.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#flyingsaucer-path {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 100%;
+    animation: flyingsaucer 5s linear infinite;
+}
+
+@keyframes flyingsaucer {
+    0% {
+        transform: translateX(-120vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+#contactus-main {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    height: 800px;
+    left: 50vw;
+
+}
+
+#contactus-title {
+    color: white;
+    font-size: 80px;
+    font-family: "Arvo";
+    font-weight: 900;
+    padding-left: 25%;
+}
+
+#contactus-helptext {
+    color: rgb(236, 234, 234);
+    padding-left: 37%;
+    font-size: 1.2rem;
+}
+
+#contactus-entry-form {
+    display: block;
+    background-color: white;
+    color: black;
+    margin-top: 33%;
+    margin-left: -20%;
+    padding-top: 13px;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 09);
+    grid-template-areas: "label-textbox";
+    background: linear-gradient(-45deg, rgb(187, 92, 92), rgb(117, 117, 202), rgb(235, 229, 229));
+    z-index: 1;
+}
+
+#aboutus-main {
+    position: absolute;
+    display: grid;
+    width: 90%;
+    left: 5%;
+    margin-top: 15vh;
+    grid-template-columns: 80vw;
+    grid-template-rows: 3vh 0 50vh;
+    justify-content: center;
+}
+
+#aboutus-title {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    color: white;
+    font-size: 40px;
+    font-family: "Arvo";
+    font-weight: 900;
+    height: fit-content;
+}
+
+#aboutus-dreamteam {
+    position: relative;
+    width: fit-content;
+    color: white;
+    font-size: 20px;
+    font-family: "Arvo";
+    font-weight: 400;
+    height: fit-content;
+    transform: translateX(200px) translateY(-15px);
+}
+
+#agent-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 25px;
+    gap: 20px;
+}
+
+#agent-container>* {
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 09);
+    width: 90%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: rgb(173, 138, 206);
+    z-index: 1;
+}
+
+#airplane3-path {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 100%;
+    animation: airplane3 5s linear infinite;
+}
+
+@keyframes airplane3 {
+    0% {
+        transform: translateX(-140vw) translateY(120vh);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(-120vh);
+    }
+}
+
+#earth-agent {}
+
+#moon-agent {}
+
+#mars-agent {}
+
+#saturn-agent {}
