@@ -200,3 +200,19 @@ textarea {
         transform: translateX(100vw) translateY(-120vh);
     }
 }
+
+#ufo-path {
+    position: absolute;
+    margin-top: 10vh;
+    animation: ufo 10s linear infinite alternate-reverse;
+}
+
+@keyframes ufo {
+    0% {
+        transform: translateX(-140vw) translateY(120vh);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(-120vh);
+    }
+}
