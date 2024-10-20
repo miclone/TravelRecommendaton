@@ -73,6 +73,14 @@ body {
     outline: none;
 }
 
+#dreamtravelcenter {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 #airplane1-path {
     position: absolute;
     margin-top: 90dvh;
