@@ -86,7 +86,7 @@ body {
     }
 
     100% {
-        transform: translateX(-120dvw);
+        transform: translateX(-120dvw); 
     }
 }
 
