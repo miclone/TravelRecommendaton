@@ -92,27 +92,27 @@ body {
     }
 
     15% {
-        transform: translateX(-150vw) translateY(-50vh) rotate(30deg);
+        transform: translateX(-150vw) translateY(-50vh) rotate(60deg);
     }
 
     30% {
-        transform: translateX(-100vw) translateY(30vh) rotate(45deg);
+        transform: translateX(-100vw) translateY(30vh) rotate(120deg);
     }
 
     45% {
-        transform: translateX(-60vw) translateY(60vh) rotate(60deg);
+        transform: translateX(-60vw) translateY(60vh) rotate(180deg);
     }
 
     60% {
-        transform: translateX(-30vw) translateY(80vh) rotate(85deg);
+        transform: translateX(-30vw) translateY(80vh) rotate(240deg);
     }
 
     75% {
-        transform: translateX(10vw) translateY(100vh) rotate(100deg);
+        transform: translateX(10vw) translateY(100vh) rotate(270deg);
     }
 
     100% {
-        transform: translateX(20vw) translateY(120vh) rotate(180deg);
+        transform: translateX(20vw) translateY(120vh) rotate(360deg);
     }
 }
 

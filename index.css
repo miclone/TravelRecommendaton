@@ -15,37 +15,112 @@ body {
     overflow: hidden;
 }
 
+#home-main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90dvw;
+    height: 70dvh;
+    margin-left: 5dvw;
+    margin-top: 16dvh;
+    gap: 20px;
+    z-index: 1;
+}
+
+#search {
+    display: flex;
+}
+
+#search-box {
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 30px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+#bookwithus {
+    width: 100px;
+    margin-left: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#noresultfound {
+    display: none;
+    width: 600px;
+    height: 300px;
+}
+
+#search-button {
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+#search-text {
+    font-size: 1rem;
+    width: 90%;
+    margin-left: 3%;
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+
 #airplane1-path {
     position: absolute;
-    margin-top: 90vh;
+    margin-top: 90dvh;
     margin-left: 100%;
     animation: airplane1 15s linear infinite;
 }
 
 @keyframes airplane1 {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(100dvw);
     }
 
     100% {
-        transform: translateX(-120vw);
+        transform: translateX(-120dvw);
     }
 }
 
 #airplane2-path {
     position: absolute;
-    margin-top: 80vh;
+    margin-top: 80dvh;
     margin-left: 150%;
     animation: airplane2 20s linear infinite;
 }
 
 @keyframes airplane2 {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(100dvw);
     }
 
     100% {
-        transform: translateX(-200vw);
+        transform: translateX(-200dvw);
+    }
+}
+
+#airplane3-path {
+    position: absolute;
+    margin-top: 100dvh;
+    margin-left: 150%;
+    animation: airplane3 10s linear infinite;
+}
+
+@keyframes airplane3 {
+    0% {
+        transform: translateX(100dvw) translateY(90dvh);
+    }
+
+    100% {
+        transform: translateX(-200dvw) translateY(-60dvh);
     }
 }
 
@@ -61,7 +136,87 @@ body {
         transform: translateX(-120vw);
     }
 
+    15% {
+        transform: translateX(-30vw);
+    }
+
+    65% {
+        transform: translateX(50vw);
+    }
+
     100% {
         transform: translateX(100vw);
     }
+}
+
+#stealthbomber-path {
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 100%;
+    animation: stealbomber 10s linear infinite;
+}
+
+@keyframes stealbomber {
+    0% {
+        transform: translateX(-120vw) translateY(-100px);
+    }
+
+    15% {
+        transform: translateX(-30vw);
+    }
+
+    65% {
+        transform: translateX(50vw);
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(-100px);
+    }
+}
+
+#search-results {
+    position: relative;
+    /* display: grid; */
+    display: none;
+    width: 100%;
+    height: calc(50dvh - 50px);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#result {
+    width: 29dvw;
+    height: 400px;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+#result-caption {
+    font-size: 1.2rem;
+    font-family: "Arvo";
+    font-weight: 600;
+    margin-left: 12px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#result-description {
+    font-size: 1rem;
+    margin-left: 12px;
+    margin-top: -4px;
+}
+
+#arrows {
+    /* display: flex; */
+    display: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    grid-area: 2 / 2;
+    z-index: 2;
+}
+
+#arrows img {
+    cursor: pointer;
+    margin-top: 50px;
 }

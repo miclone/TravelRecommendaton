@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+2:wght@400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./navigation.css">
-    <script src="./travel_recommendation.js" defer></script>
+    <script src="./index.js" defer></script>
     <title>Travel Recommendation</title>
 </head>
 
@@ -16,13 +21,42 @@
         <p id="travel-agent">Dream Travel Center</p>
         <ul id="menu-ul">
             <li><a href="index.html" id="li-home" class="active">&nbsp;Home&nbsp;</a></li>
-            <li><a href="travel_recommendation_aboutus.html" id="li-aboutus">&nbsp;About Us&nbsp;</a></li>
-            <li><a href="travel_recommendation_contactus.html" id="li-contactus">&nbsp;Contact Us&nbsp;</a></li>
+            <li><a href="aboutus.html" id="li-aboutus">&nbsp;About Us&nbsp;</a></li>
+            <li><a href="contactus.html" id="li-contactus">&nbsp;Contact Us&nbsp;</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="home-main">
         <div id="search">
-
+            <div id="search-box">
+                <input type="text" id="search-text"
+                    placeholder="search your dream travel or type in ALL to see all destinations" required>
+                <img src="./images/searchbutton.png" id="search-button">
+            </div>
+            <button id="bookwithus">Book with Us</button>
+        </div>
+        <div id="search-results">
+            <div id="result">
+                <img src="" id="result1-pic">
+                <p id="result-caption"></p>
+                <p id="result-description"></p>
+            </div>
+            <div id="result">
+                <img src="" id="result2-pic">
+                <p id="result-caption"></p>
+                <p id="result-description"></p>
+            </div>
+            <div id="result">
+                <img src="" id="result3-pic">
+                <p id="result-caption"></p>
+                <p id="result-description"></p>
+            </div>
+            <div id="arrows">
+                <img src="./images/leftarrow.png" onclick="lefttArrowClicked()">
+                <img src="./images/rightarrow.png" onclick="rightArrowClicked()">
+            </div>
+        </div>
+        <div id="noresultfound">
+            <img src="./images/noresultfound.png">
         </div>
     </main>
     <div id="sidebar-icons">
@@ -37,8 +71,14 @@
     <div id="airplane2-path">
         <img src="./images/airplane2.png" class="airplane2">
     </div>
+    <div id="airplane3-path">
+        <img src="./images/bremont.png" class="airplane3">
+    </div>
     <div id="flyingsaucer-path">
         <img src="./images/flyingsaucer.png" class="flyingsaucer">
+    </div>
+    <div id="stealthbomber-path">
+        <img src="./images/stealthbomber.png" class="stealthbomber">
     </div>
 </body>
 

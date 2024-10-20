@@ -6,12 +6,12 @@
         "cities": [
           {
             "name": "Sydney, Australia",
-            "imageUrl": "./images/sydney.png",
+            "imageUrl": "sydney.png",
             "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
           },
           {
             "name": "Melbourne, Australia",
-            "imageUrl": "./images/melbourne.png",
+            "imageUrl": "melbourne.png",
             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
           }
         ]
@@ -22,12 +22,12 @@
         "cities": [
           {
             "name": "Tokyo, Japan",
-            "imageUrl": "./images/tokyo.png",
+            "imageUrl": "tokyo.png",
             "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
           },
           {
             "name": "Kyoto, Japan",
-            "imageUrl": "./images/kyoto.png",
+            "imageUrl": "kyoto.png",
             "description": "Known for its historic temples, gardens, and traditional tea houses."
           }
         ]
@@ -38,12 +38,12 @@
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
-            "imageUrl": "./images/rio.png",
+            "imageUrl": "rio.png",
             "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
           },
           {
             "name": "São Paulo, Brazil",
-            "imageUrl": "./images/saopaulo.png",
+            "imageUrl": "saopaulo.png",
             "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
           }
         ]
@@ -53,13 +53,13 @@
       {
         "id": 1,
         "name": "Angkor Wat, Cambodia",
-        "imageUrl": "./images/angkorwat.png",
+        "imageUrl": "angkorwat.png",
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "./images/tajmahal.png",
+        "imageUrl": "tajmahal.png",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
@@ -67,14 +67,57 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "./images/borabora.png",
+        "imageUrl": "borabora.png",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
         "id": 2,
         "name": "Copacabana Beach, Brazil",
-        "imageUrl": "./images/copacabanabeach.png",
+        "imageUrl": "copacabanabeach.png",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+      }
+    ],
+	  "planets": [
+      {
+        "id": 1,
+        "name": "Baconmancakes, Mars",
+        "imageUrl": "baconmancakes.png",
+        "description": "Baconmancakes is first human city with a population of 300,00, living along side of 1 million Marsians."
+      },
+      {
+        "id": 2,
+        "name": "Mesperia, Mars",
+        "imageUrl": "mesperia.png",
+        "description": "Mesperia is grand canyon on Mars with its layered bands of red rock revealing millions of years of geological history."
+      },
+      {
+        "id": 3,
+        "name": "Underground Hotel, Mars",
+        "imageUrl": "marsundergroundhotel.png",
+        "description": "Its 40 kilometer deep from the surface residing 300,000 human mining workers. Bonkers hotel having 5,000 visitors each year."
+      },
+	    {
+        "id": 4,
+        "name": "Delambre, Moon",
+        "imageUrl": "delambre.png",
+        "description": "Delambre hotel is best place on the moon that you can watch the earth going around while enjoying your moon teas."
+      },
+	    {
+        "id": 5,
+        "name": "Collins, Moon",
+        "imageUrl": "collins.png",
+        "description": "Collins tribles are the expatriates who escaped from earth during the big flood period 12,000 years ago."
+      },
+      {
+        "id": 6,
+        "name": "Hexagonal Cloud Hotel, Saturn",
+        "imageUrl": "saturnnorthpole.png",
+        "description": "It is the favourite place for human visitors to stay. atmospheric gases moving at 320 km/h."
+      },{
+        "id": 7,
+        "name": "Chamber Hotel, Saturn",
+        "imageUrl": "saturnsouthpole.png",
+        "description": "Chamber hotel located near south pole was built for interstellar travellers. Now its open to earth bound humans. "
       }
     ]
   }

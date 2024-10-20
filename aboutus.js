@@ -1,6 +1,6 @@
-const images = new Array("./images/agent1.png", "./images/agent2.png",
-    "./images/agent3.png", "./images/agent4.png", "./images/agent5.png",
-    "./images/agent6.png", "./images/agent7.png", "./images/agent8.png",
+const images = new Array("agent1.png", "agent2.png",
+    "agent3.png", "agent4.png", "agent5.png",
+    "agent6.png", "agent7.png", "agent8.png",
 );
 
 const p1 = document.querySelector("#agent1");
@@ -21,10 +21,10 @@ function changeIndexValue(index, newValue) {
 }
 
 function moveImages() {
-    p1.src = images[indexes[0]];
-    p2.src = images[indexes[1]];
-    p3.src = images[indexes[2]];
-    p4.src = images[indexes[3]];
+    p1.src = "./images/" + images[indexes[0]];
+    p2.src = "./images/" + images[indexes[1]];
+    p3.src = "./images/" + images[indexes[2]];
+    p4.src = "./images/" + images[indexes[3]];
 }
 
 function lefttArrowClicked() {
