@@ -8,6 +8,8 @@ const p2 = document.querySelector("#agent2");
 const p3 = document.querySelector("#agent3");
 const p4 = document.querySelector("#agent4");
 
+const sessionIndexesData = "sessionIndexes";
+
 let indexes = new Array(0, 1, 2, 3);
 
 function changeIndexValue(index, newValue) {
@@ -25,6 +27,7 @@ function moveImages() {
     p2.src = "./images/" + images[indexes[1]];
     p3.src = "./images/" + images[indexes[2]];
     p4.src = "./images/" + images[indexes[3]];
+    saveSessionIndexesData();
 }
 
 function lefttArrowClicked() {
@@ -42,3 +45,21 @@ function rightArrowClicked() {
     changeIndexValue(3, indexes[3] + 1);
     moveImages();
 }
+
+function saveSessionIndexesData() {
+    sessionStorage.setItem(sessionIndexesData, indexes.toString());
+}
+
+function loadSessionIndexesData() {
+    let sessionData = sessionStorage.getItem(sessionIndexesData);
+    if (sessionData) {
+        let sessionIndex = sessionData.split(",");
+        indexes[0] = parseInt(sessionIndex[0]);
+        indexes[1] = parseInt(sessionIndex[1]);
+        indexes[2] = parseInt(sessionIndex[2]);
+        indexes[3] = parseInt(sessionIndex[3]);
+        moveImages();
+    }
+}
+
+window.addEventListener('load', loadSessionIndexesData());
