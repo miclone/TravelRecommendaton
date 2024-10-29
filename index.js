@@ -3,7 +3,6 @@ const search_results = document.querySelector("#search-results");
 const noresultfound = document.querySelector("#noresultfound");
 const search_text = document.querySelector("#search-text");
 const arrows = document.querySelector("#arrows");
-const dreamtravelcenter = document.querySelector("#dreamtravelcenter");
 const search_button = document.querySelector("#search-button");
 
 const result1 = document.querySelector("#result1");
@@ -185,8 +184,7 @@ function displaySearchedResults() {
 }
 
 function searchDesiredDestinations() {
-    sessionStorage.clear();
-    dreamtravelcenter.style.display = "none";
+    sessionStorage.clear();    
     search_results.style.display = "none";
     arrows.style.display = "none";
     noresultfound.style.display = "none";
