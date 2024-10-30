@@ -51,8 +51,8 @@ body {
 }
 
 #noresultfound {
-    display: none;
     width: 600px;
+    display: none;
     height: 300px;
 }
 
