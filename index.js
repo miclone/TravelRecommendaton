@@ -157,25 +157,28 @@ function loadDisplayIndexesSessionData() {
 function displaySearchedResults() {
     let i = 0;
     let c = 0;
-    Array.from(searchedDestinations).forEach(destination => {
-        if ((c < 3) && (i >= indexes[0]) && (i <= indexes[2]) && (i < searchedDestinations.length)) {
-            switch (c) {
-                case 0:
-                    result1.style.display = "block";
-                    setImage1(destination);
-                    break;
-                case 1:
-                    result2.style.display = "block";
-                    setImage2(destination);
-                    break;
-                case 2:
-                    result3.style.display = "block";
-                    setImage3(destination);
-                    break;
+    Array.from(indexes).forEach(index => {
+        let i2 = 0;
+        Array.from(searchedDestinations).forEach(destination => {
+            if (i2 == index) {
+                switch (c) {
+                    case 0:
+                        result1.style.display = "block";
+                        setImage1(destination);
+                        break;
+                    case 1:
+                        result2.style.display = "block";
+                        setImage2(destination);
+                        break;
+                    case 2:
+                        result3.style.display = "block";
+                        setImage3(destination);
+                        break;
+                }
+                c++;
             }
-            c++;
-        };
-        i++;
+            i2++;
+        })
     });
     search_results.style.display = "grid";
     if (searchedDestinations.length > 3) {
@@ -184,7 +187,7 @@ function displaySearchedResults() {
 }
 
 function searchDesiredDestinations() {
-    sessionStorage.clear();    
+    sessionStorage.clear();
     search_results.style.display = "none";
     arrows.style.display = "none";
     noresultfound.style.display = "none";
